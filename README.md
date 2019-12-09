@@ -1,1 +1,1 @@
-# CSIS-3020-Web-Project-5
+A flashcard quiz application using JavaScript, HTML5, and CSS.
