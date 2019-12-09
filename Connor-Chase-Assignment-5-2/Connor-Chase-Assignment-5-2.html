@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<!-- November 16, 2019 -->
+<!-- Connor-Chase-Assignment-5-2.html -->
+<!-- Tested with Google Chrome -->
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Computer Applications Quiz</title>
+   </head>
+
+   <body>
+   <style type = "text/css">
+   		@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+		#appImg {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 20%;
+			height: 40%;
+		}
+		#choiceButtons {
+			margin-top: 30px;
+		}
+		h1, h5 {
+			text-align: center;
+		}
+		#footertext {
+			text-align: center;
+			margin-top: 30px;
+			font-size: 15px;
+		}
+		.container {
+			display: block;
+			text-align: center;
+		}
+		body {
+			background-image: url("https://cdn.pixabay.com/photo/2016/10/11/21/43/geometric-1732847_1280.jpg");
+			font-family: 'Michroma', sans-serif;
+			color: white;
+			font-size: 25px;
+		}
+   	</style>
+
+	<script src="Connor-Chase-Assignment-5-2.js"></script>
+
+	<h1>Computer Applications Quiz</h1>
+	<h5><em>Test your knowledge on computer software. Can you name them all?</em></h5>
+
+    <div class ="container">
+
+    	<img id="appImg" src = "" alt= "">
+
+    	<form id = "choiceButtons" action = "#">
+
+    		<input class = "inputBtn" id = "choice1" type = "button" onclick = "checkAns(this)" name = "choice1" value="Choice 1">
+    		<input class = "inputBtn" id = "choice2" type = "button" onclick = "checkAns(this)" name = "choice2" value="Choice 2">
+    		<input class = "inputBtn" id = "choice3" type = "button" onclick = "checkAns(this)" name = "choice3" value="Choice 3">
+    		<input class = "inputBtn" id = "choice4" type = "button" onclick = "checkAns(this)" name = "choice4" value="Choice 4">
+
+    	</form>
+
+    	<p id = "correctCounter">Correct Answer Counter: </p>
+    	<p id = "questionCounter">Question Counter: </p>
+    	<p id = "wrongCounter">Wrong Answer Counter: </p>
+
+    	<form action = "#">
+
+    		<input id = "nextButton" type = "button" onclick = "startQuiz()" value = "Next">
+    		<input id = "correctButton" type = "button" onclick = "correctAns()" value = "Reveal Answer">
+
+    	</form>
+
+    </div>
+    <br>
+
+    <footer>
+
+    	<p id = "footertext">Created By Connor Chase</p>
+
+    </footer>
+
+   </body>
+
+</html>
